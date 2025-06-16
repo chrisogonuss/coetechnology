@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Twitter } from "lucide-react"
 
-import victor from "/public/victor.jpeg"
+import victor from "/public/Victor.jpeg"
 import Chrisogonus from "/public/Chrisogonus.jpeg"   
 import Francis from "/public/Francis.jpg"
 import Tya from "/public/Tya.jpg"
