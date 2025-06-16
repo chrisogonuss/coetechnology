@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
+import { Head } from 'next/document'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'CEO Technology',
+  description: 'Web dev Agency',
+  generator: '',
+  icons: ["/public/coeTechnology-logoo.png"]
 }
 
 export default function RootLayout({
