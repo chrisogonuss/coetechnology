@@ -53,14 +53,14 @@ export default function Services() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-[#111827]/70">{service.description}</CardDescription>
-                <ul className="mt-4 space-y-2">
+                {/* <ul className="mt-4 space-y-2">
                   {[1, 2, 3].map((item) => (
                     <li key={item} className="flex items-center">
                       <Check className="mr-2 h-4 w-4 text-[#22C55E]" />
                       <span className="text-sm text-[#111827]/70">Feature {item}</span>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </CardContent>
             </Card>
           ))}

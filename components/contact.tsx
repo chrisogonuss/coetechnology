@@ -66,7 +66,14 @@ export default function Contact() {
                         <Phone className="mr-4 h-5 w-5 text-[#000035]" />
                         <div>
                           <h4 className="font-medium text-[#111827]">Phone</h4>
-                          <p className="text-sm text-[#111827]/70">(+62) 813-1970-0926, (234) 808-877-2516 </p>
+                          <p className="text-sm text-[#111827]/70">(+234) 808-877-2516 </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <Phone className="mr-4 h-5 w-5 text-[#000035]" />
+                        <div>
+                          <h4 className="font-medium text-[#111827]">Whatsapp</h4>
+                          <p className="text-sm text-[#111827]/70">(+62) 813-1970-0926 </p>
                         </div>
                       </div>
                       <div className="flex items-start">
