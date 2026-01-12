@@ -7,6 +7,7 @@ import { ArrowRight, Code, Zap, Globe } from "lucide-react"
 import BanerPicture from "/public/BanerPicture.png"
 import Logo from "/public/coelogo-nobg.png"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("")
@@ -27,7 +28,7 @@ export default function Hero() {
 
     <main className="bg-gradient-to-br from-[#000035]/10 to-transparent">
       <header className="p-4 md:p-6 lg:p-8">
-        <Image src={Logo} alt="Logo" width={100} height={100} />
+        <Image src={Logo} alt="Logo" width={150} height={250} />
       </header>
       <section className="relative overflow-hidden w-full">
         <div className="absolute inset-0" />
@@ -45,12 +46,18 @@ export default function Hero() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[300px]:flex-row">
-                <Button className="bg-[#000035] hover:bg-[#000035]/90">
-                  Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                
+                <Button className="bg-[#000035] hover:bg-[#000035]/90" asChild>
+                  <Link href={"#contact"}>
+                    Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
-                <Button variant="outline" className="border-[#000035] text-[#000035]">
-                  View Our Work
+                <Button variant="outline" className="border-[#000035] text-[#000035]" asChild>
+                  <Link href={"#portfolio"}>
+                    View Our Work
+                  </Link>
                 </Button>
+     
               </div>
               <div className="flex flex-wrap items-center gap-4 pt-4">
                 <div className="flex items-center gap-1">

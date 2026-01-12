@@ -60,27 +60,27 @@ export default function Footer() {
             <h4 className="mb-4 text-lg font-semibold">Company</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
-                  About Us
+                <Link href="#services" className="text-gray-400 transition-colors hover:text-white">
+                  Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
+                <Link href="#portfolio" className="text-gray-400 transition-colors hover:text-white">
                   Our Work
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
-                  Team
+                <Link href="#testimonials" className="text-gray-400 transition-colors hover:text-white">
+                  Testimonials
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" className="text-gray-400 transition-colors hover:text-white">
                   Careers
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
+                <Link href="#contact" className="text-gray-400 transition-colors hover:text-white">
                   Contact
                 </Link>
               </li>
