@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-xl font-bold">COE Technology</h3>
+            <h3 className="mb-4 text-xl font-bold">COEHUB Technologies</h3>
             <p className="mb-4 text-gray-400">
               Creating exceptional web experiences that drive results for businesses of all sizes.
             </p>
@@ -105,7 +105,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-gray-700 pt-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-gray-400">© {new Date().getFullYear()} COE Technology. All rights reserved.</p>
+            <p className="text-sm text-gray-400">© {new Date().getFullYear()} COEHUB Technologies. All rights reserved.</p>
             <div className="flex space-x-4">
               <Link href="#" className="text-sm text-gray-400 hover:text-white">
                 Privacy Policy
