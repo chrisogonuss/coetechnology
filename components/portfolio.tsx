@@ -6,13 +6,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ExternalLink } from "lucide-react"
 
-import faithye from "/public/faithye.png"
-import househunt from "/public/househunt.png"
-import klover from "/public/klover.png"
-import pointplus from "/public/pointplus.png"
-import RukkyInstitute from "/public/RukkyInstitute.png"
-import roseSchool from "/public/roseschool.png"
+import butterfly from "/public/butterfly.png"
+import topMercy from "/public/topmercy.png"
+import DeeChepsen from "/public/DeeChepsen.png"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("all")
@@ -20,46 +18,28 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "Faithye",
+      title: "Butterfly AI",
       category: "web",
-      image: faithye,
-      description: "A fully responsive e-commerce platform with advanced filtering and payment integration.",
+      image: butterfly,
+      description: "An AI image and video generator",
+      link: "https://ai.eezdra.com/"
     },
     {
       id: 2,
-      title: "Househunt",
+      title: "Top Mercy School",
       category: "web",
-      image: househunt,
-      description: "Modern corporate website with custom CMS and interactive elements.",
+      image: topMercy,
+      description: "A school website",
+      link: "https://topmercyschools.com/"
     },
     {
       id: 3,
-      title: "Klover",
+      title: "Dee-Chepsen School",
       category: "web",
-      image: klover,
-      description: "User interface design for a fitness tracking mobile application.",
-    },
-    {
-      id: 4,
-      title: "Rose Int'l School",
-      category: "web",
-      image: roseSchool,
-      description: "Comprehensive dashboard for a SaaS platform with data visualization.",
-    },
-    {
-      id: 5,
-      title: "Pointplus",
-      category: "web",
-      image: pointplus,
-      description: "Online booking system for a chain of restaurants with real-time availability.",
-    },
-    {
-      id: 6,
-      title: "Rukky Institute of Technology",
-      category: "web",
-      image: RukkyInstitute,
-      description: "Travel planning application with itinerary management and booking features.",
-    },
+      image: DeeChepsen,
+      description: "A school website",
+      link: "https://www.deechepsenschool.com.ng/"
+    }
   ]
 
   const filteredProjects = activeTab === "all" ? projects : projects.filter((project) => project.category === activeTab)
@@ -76,11 +56,11 @@ export default function Portfolio() {
 
         <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab}>
           <div className="flex justify-center">
-            <TabsList className="mb-8">
+            {/* <TabsList className="mb-8">
               <TabsTrigger value="all">All Projects</TabsTrigger>
               <TabsTrigger value="web">Web Development</TabsTrigger>
               <TabsTrigger value="mobile">Mobile Apps</TabsTrigger>
-            </TabsList>
+            </TabsList> */}
           </div>
 
           <TabsContent value={activeTab} className="mt-0">
@@ -100,9 +80,11 @@ export default function Portfolio() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
                       <div className="absolute bottom-4 left-4 right-4">
-                        {/* <Button variant="secondary" size="sm" className="w-full">
+                      <Link href={project.link}>
+                        <Button variant="secondary" size="sm" className="w-full">
                           View Project <ExternalLink className="ml-2 h-4 w-4" />
-                        </Button> */}
+                        </Button>
+                      </Link>
                       </div>
                     </div>
                   </div>

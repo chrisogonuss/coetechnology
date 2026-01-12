@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Code, Zap, Globe } from "lucide-react"
 
 import BanerPicture from "/public/BanerPicture.png"
-import Logo from "/public/coeTechnology-logoo.png"
+import Logo from "/public/coelogo-nobg.png"
 import Image from "next/image"
 
 export default function Hero() {

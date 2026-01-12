@@ -59,23 +59,23 @@ export default function Contact() {
                         <MapPin className="mr-4 h-5 w-5 text-[#000035]" />
                         <div>
                           <h4 className="font-medium text-[#111827]">Our Location</h4>
-                          <p className="text-sm text-[#111827]/70">Jakarta Indonesia</p>
+                          <p className="text-sm text-[#111827]/70">Lagos, Nigeria</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <Phone className="mr-4 h-5 w-5 text-[#000035]" />
                         <div>
-                          <h4 className="font-medium text-[#111827]">Phone</h4>
+                          <h4 className="font-medium text-[#111827]">Phone / WhatsApp</h4>
                           <p className="text-sm text-[#111827]/70">(+234) 808-877-2516 </p>
                         </div>
                       </div>
-                      <div className="flex items-start">
+                      {/* <div className="flex items-start">
                         <Phone className="mr-4 h-5 w-5 text-[#000035]" />
                         <div>
                           <h4 className="font-medium text-[#111827]">Whatsapp</h4>
                           <p className="text-sm text-[#111827]/70">(+62) 813-1970-0926 </p>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="flex items-start">
                         <Mail className="mr-4 h-5 w-5 text-[#000035]" />
                         <div>
