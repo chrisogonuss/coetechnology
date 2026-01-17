@@ -8,6 +8,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react"
+import { FaInstagram, FaTwitter } from "react-icons/fa6"
+import Link from "next/link"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,6 +20,15 @@ export default function Contact() {
     message: "",
   })
 
+  const socialIcons = [{
+    icon: <FaInstagram className="text-black" size={24} />,
+    href: "https://www.instagram.com/coehub_technologies/"
+  }, {
+    icon: <FaTwitter className="text-black" color="#000" size={24} />,
+    href: "https://x.com/chrisogonus_e_o"
+  }]
+
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
@@ -96,15 +107,14 @@ export default function Contact() {
                   <div className="mt-8">
                     <h4 className="mb-3 font-medium text-[#111827]">Follow Us</h4>
                     <div className="flex space-x-3">
-                      {["facebook", "twitter", "instagram", "linkedin"].map((social) => (
-                        <a
-                          key={social}
-                          href="#"
+                      {socialIcons.map((social) => (
+                        <Link
+                          key={social.href}
+                          href={social.href}
                           className="rounded-full bg-gray-100 p-2 text-[#111827] transition-colors hover:bg-[#1D4ED8] hover:text-white"
                         >
-                          <span className="sr-only">{social}</span>
-                          <div className="h-4 w-4" />
-                        </a>
+                          <div className="h-4 w-4 flex items-center justify-center" >{social.icon}</div>
+                        </Link>
                       ))}
                     </div>
                   </div>
