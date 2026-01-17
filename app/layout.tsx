@@ -3,10 +3,14 @@ import { Head } from 'next/document'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'CEO Technology',
+  title: 'COE HUB Technology',
   description: 'Web dev Agency',
-  generator: '',
-  icons: ["/public/coeTechnology-logoo.png"]
+  icons: ["./coelogo-nobg.png"],
+  openGraph: {
+    title: 'COE HUB Technology',
+    description: 'Web dev Agency',
+    images: ["./coelogo.png"],
+  }
 }
 
 export default function RootLayout({

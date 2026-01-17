@@ -80,7 +80,7 @@ export default function Contact() {
                         <Mail className="mr-4 h-5 w-5 text-[#000035]" />
                         <div>
                           <h4 className="font-medium text-[#111827]">Email</h4>
-                          <p className="text-sm text-[#111827]/70">coetechnologycompany@gmail.com</p>
+                          <p className="text-sm text-[#111827]/70">coehubtechnology@outlook.com</p>
                         </div>
                       </div>
                       <div className="flex items-start">
