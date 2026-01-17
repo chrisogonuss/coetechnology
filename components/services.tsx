@@ -7,31 +7,37 @@ export default function Services() {
       icon: <Code className="h-12 w-12 text-[#000035]" />,
       title: "Web Development",
       description: "Custom websites built with the latest technologies for optimal performance and user experience.",
+      id: "web-development"
     },
     {
       icon: <Smartphone className="h-12 w-12 text-[#000035]" />,
       title: "Responsive Design",
       description: "Mobile-friendly websites that look great and function perfectly on all devices and screen sizes.",
+      id: "responsive-design"
     },
     {
       icon: <Gauge className="h-12 w-12 text-[#000035]" />,
       title: "Performance Optimization",
       description: "Speed up your website for better user experience and improved search engine rankings.",
+      id: "performance-optimization"
     },
     {
       icon: <Search className="h-12 w-12 text-[#000035]" />,
       title: "SEO Services",
       description: "Optimize your website to rank higher in search results and attract more organic traffic.",
+      id: "seo-services"
     },
     {
       icon: <Paintbrush className="h-12 w-12 text-[#000035]" />,
       title: "UI/UX Design",
       description: "Beautiful, intuitive designs that enhance user experience and drive conversions.",
+      id: "ui-ux-design"
     },
     {
       icon: <Headphones className="h-12 w-12 text-[#000035]" />,
       title: "Maintenance & Support",
       description: "Ongoing support and maintenance to keep your website secure, updated, and running smoothly.",
+      id: "maintenance-support"
     },
   ]
 
@@ -46,7 +52,7 @@ export default function Services() {
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <Card key={index} className="border-none shadow-lg transition-all duration-200 hover:shadow-xl">
+            <Card key={index} className="border-none shadow-lg transition-all duration-200 hover:shadow-xl" id={service.id}>
               <CardHeader>
                 <div className="mb-2">{service.icon}</div>
                 <CardTitle className="text-xl font-bold">{service.title}</CardTitle>

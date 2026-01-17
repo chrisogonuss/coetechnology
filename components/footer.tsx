@@ -29,27 +29,22 @@ export default function Footer() {
             <h4 className="mb-4 text-lg font-semibold">Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
+                <Link href="#web-development" className="text-gray-400 transition-colors hover:text-white">
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
+                <Link href="#responsive-design" className="text-gray-400 transition-colors hover:text-white">
                   Responsive Design
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
-                  E-Commerce
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
+                <Link href="#seo-services" className="text-gray-400 transition-colors hover:text-white">
                   SEO Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 transition-colors hover:text-white">
+                <Link href="#ui-ux-design" className="text-gray-400 transition-colors hover:text-white">
                   UI/UX Design
                 </Link>
               </li>
