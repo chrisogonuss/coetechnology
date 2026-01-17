@@ -9,7 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'COE HUB Technology',
     description: 'Web dev Agency',
-    images: ["./coelogo.png"],
+    images: {
+      url: './coelogo.png',
+      width: 1200,
+      height: 630,
+      alt: 'COE HUB Technology Logo',
+    }
   }
 }
 
